@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Music App</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu_side">
+        <h1>Playlist</h1>
+        <div class="playlist">
+          <h4 class="active">
+            <span></span><i class="bi bi-music-note-beamed"></i> Playlist
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Last Listening
+          </h4>
+          <h4><span></span><i class="bi bi-music-note-beamed"></i> For you</h4>
+        </div>
+        <div class="menu_song">
+          <li class="songItem">
+            <span>01</span>
+            <img src="./img/1.jpg" alt="Guns N' Roses" />
+            <h5>
+              Sweet Child O' Mine
+              <div class="subtitle">Guns N' Roses</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+          </li>
+
+          <li class="songItem">
+            <span>02</span>
+            <img src="./img/2.jpg" alt="Money Rain" />
+            <h5>
+              VTORNIK
+              <div class="subtitle">Money Rain Remix</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+          </li>
+          <li class="songItem">
+            <span>03</span>
+            <img src="./img/3.jpg" alt="Instant Crush" />
+            <h5>
+              Daft Punk
+              <div class="subtitle">Instant Crush</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+          </li>
+          <li class="songItem">
+            <span>04</span>
+            <img src="./img/4.jpg" alt="Axel Thesleff" />
+            <h5>
+              Bad Karma
+              <div class="subtitle">Axel Thesleff</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+          </li>
+          <li class="songItem">
+            <span>05</span>
+            <img src="./img/5.jpg" alt="Flo ida" />
+            <h5>
+              Flo Rida - GDFR
+              <div class="subtitle">K Theory Remix</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+          </li>
+          <li class="songItem">
+            <span>06</span>
+            <img src="./img/6.jpg" alt="Living on Prayer" />
+            <h5>
+              Living on Prayer
+              <div class="subtitle">Bon Jovi</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+          </li>
+        </div>
+      </div>
+
+      <div class="song_side">
+        <nav>
+          <ul>
+            <li>Discover <span></span></li>
+            <li>My List</li>
+            <li>Radio</li>
+          </ul>
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music" />
+          </div>
+          <div class="user">
+            <img
+              src="./img/User Profile.png"
+              alt="User"
+              title="Maycoll Jaramillo"
+            />
+          </div>
+        </nav>
+
+        <div class="content">
+          <h1>Guns N' Roses</h1>
+          <p>
+            She's got a smile that it seems to me Reminds me of childhood
+            <br />
+            memories Where everything was as fresh As the bright blue sky
+          </p>
+          <div class="buttons">
+            <button>Play</button>
+            <button>Follow</button>
+          </div>
+        </div>
+
+        <div class="popular_song">
+          <div class="h4">
+            <h4>Trending Songs</h4>
+            <div class="btn_s">
+              <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+              <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+          <div class="pop_song">
+            <li class="songItem">
+              <div class="img_play">
+                <img
+                  src="./img/7.jpg"
+                  alt="Adalberto Santiago"
+                />
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+              <h5>
+                La Noche Más Linda<br />
+                <div class="subtitle">Adalberto Santiago</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/Bones Imagine Dragons.jfif" alt="Bones" />
+                <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+              </div>
+              <h5>
+                Laura Branigan<br />
+                <div class="subtitle">Self Control</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/9.jpg" alt="Numb" />
+                <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+              </div>
+              <h5>
+                Numb<br />
+                <div class="subtitle">Linkin Park</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/10.jpg" alt="Queen" />
+                <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+              </div>
+              <h5>
+                Bohemian Rhapsody<br />
+                <div class="subtitle">Queen</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/11.jpg" alt="Dragonforce" />
+                <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+              </div>
+              <h5>
+                Coco Jamboo<br />
+                <div class="subtitle">Mr. President</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/12.jpg" alt="Lil Nas X" />
+                <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+              </div>
+              <h5>
+                Old Town Road<br />
+                <div class="subtitle">Lil Nas X</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/13.jpg" alt="Motorhead" />
+                <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+              </div>
+              <h5>
+                Ace of Spades<br />
+                <div class="subtitle">Motorhead</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/Lamento Boliviano.jfif" alt="Enanitos Verdes" />
+                <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+              </div>
+              <h5>
+                Lamento Boliviano<br />
+                <div class="subtitle">Enanitos Verdes</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/15.jpg" alt="Kiss" />
+                <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+              </div>
+              <h5>
+                I Was Made For Loving You<br />
+                <div class="subtitle">KISS</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/16.jpg" alt="Michael Jackson" />
+                <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+              </div>
+              <h5>
+                After Dark<br />
+                <div class="subtitle">Mr. Kitty</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="./img/Smooth Criminal.jfif" alt="Laura Brian" />
+                <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+              </div>
+              <h5>
+                Aaron Smith - Dancin<br />
+                <div class="subtitle">Krono Remix </div>
+              </h5>
+            </li>
+          </div>
+        </div>
+
+        <div class="popular_artists">
+          <div class="h4">
+            <h4>Popular Artists</h4>
+            <div class="btn_s">
+              <i id="left_scrolls" class="bi bi-arrow-left-short" id="left_scroll"></i>
+              <i id="right_scrolls" class="bi bi-arrow-right-short" id="right_scroll"></i>
+            </div>
+          </div>
+          <div class="item">
+            <li>
+              <img
+                src="./img/Artists/50 cent.jfif"
+                alt="50 Cent"
+                title="50 Cent"
+              />
+            </li>
+            
+            <li>
+              <img
+                src="./img/Artists/OIP.jfif"
+                alt="Freddie Mercury"
+                title="Freddie Mercury"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/Billy.jfif"
+                alt="Billy Joel"
+                title="Billy Joel"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/Rammstein.jfif"
+                alt="Rammstein"
+                title="Rammstein"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/die toten hosen.jfif"
+                alt="Die Toten Hosen"
+                title="Die Toten Hosen"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/Lil Nas.jfif"
+                alt="Lil Nas X"
+                title="Lil Nas X"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/John.jfif"
+                alt="John Lenon"
+                title="John Lenon"
+              />
+            </li>
+
+            <li>
+              <img
+                src="./img/Artists/Skrillex.jfif"
+                alt="Skrillex"
+                title="Skrillex"
+              />
+            </li>
+
+
+
+            <li>
+              <img
+                src="./img/Artists/ZZ.jfif"
+                alt="ZZ Top"
+                title="ZZ Top"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/Heroes.jfif"
+                alt="Heroes del Silencio"
+                title="Heroes del Silencio"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/Artists/AC.jfif"
+                alt="AC/DC"
+                title="AC/DC"
+              />
+            </li>
+
+            <li>
+              <img
+                src="./img/Artists/Mana.jfif"
+                alt="Mana"
+                title="Mana"
+              />
+            </li>
+
+            <li>
+              <img
+                src="./img/Artists/17.jfif"
+                alt="Aron Smith"
+                title="Aron Smith"
+              />
+            </li>
+            
+            <li>
+              <img
+                src="./img/Artists/16.jfif"
+                alt="Mrs Kitty"
+                title="Mrs Kitty"
+              />
+            </li>
+
+            
+
+          </div>
+        </div>
+      </div>
+
+      <div class="master_play">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <img src="./img/1.jpg" alt="Guns and Roses" id="poster_master_play" />
+        <h5 id="title">
+          Sweet Child O' Mine <br />
+          <div class="subtitle">Guns N' Roses</div>
+        </h5>
+        <div class="icon">
+          <i class="bi bi-skip-start-fill" id="back"></i>
+          <i class="bi bi-play-fill" id="masterPlay"></i>
+          <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+        <div class="vol">
+          <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+          <input type="range" id="vol" min="0" value="30" max="100" />
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
+      </div>
+    </header>
+  
+  </body>
+  <script src="./app.js"></script>
+</html>
